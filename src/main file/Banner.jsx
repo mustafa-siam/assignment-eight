@@ -8,7 +8,7 @@ const Banner = () => {
                <Link to={'/listbooks'}><button className="btn bg-[#23BE0A] text-white mt-16 mb-3">View The List</button></Link> 
             </div>
             <div>
-                <img src="/img/banner.webp" alt="" />
+                <img src="https://i.ibb.co.com/PvZcgNQQ/banner.webp" alt="" />
             </div>
         </div>
     );

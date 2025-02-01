@@ -8,8 +8,9 @@ const Listbooks = () => {
             <div className="dropdown dropdown-bottom">
   <div tabIndex={0} role="button" className="btn m-1 bg-[#23BE0A]">Sort By <RiArrowDropDownLine className="text-3xl"></RiArrowDropDownLine></div>
   <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-    <li><a>Item 1</a></li>
-    <li><a>Item 2</a></li>
+    <li><Link>Rating</Link></li>
+    <li><Link>Number of pages</Link></li>
+    <li><Link>published year</Link></li>
   </ul>
 </div>
             </div>
