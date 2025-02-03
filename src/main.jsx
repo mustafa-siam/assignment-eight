@@ -11,11 +11,13 @@ import Readbooks from './Book file/Readbooks'
 import Whislistbooks from './Book file/Whislistbooks'
 import Blog from './header file/Blog'
 import About from './header file/About'
+import Errorpage from './header file/Errorpage'
 
 const router=createBrowserRouter([
   {
      path:'/',
      element:<Root></Root>,
+     errorElement:<Errorpage></Errorpage>,
      children:[{
       path:'/',
       element:<Home></Home>

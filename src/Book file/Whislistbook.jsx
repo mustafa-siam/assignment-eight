@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { RiPagesLine } from "react-icons/ri";
-
+import PropTypes from 'prop-types';
 const Whislistbook = ({whislist}) => {
     const {id,image,bookName,author,category,rating,tags,yearOfPublishing,totalPages,publisher}=whislist;
     return (
@@ -43,5 +43,7 @@ const Whislistbook = ({whislist}) => {
         </div>
     );
 };
-
+Whislistbook.propTypes = {
+  whislist:PropTypes.object.isRequired
+}
 export default Whislistbook;

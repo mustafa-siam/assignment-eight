@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { RiPagesLine } from "react-icons/ri";
+import PropTypes from 'prop-types';
 const Readbook = ({readbook}) => {
     const {id,image,bookName,author,category,rating,tags,yearOfPublishing,totalPages,publisher}=readbook;
     return (
@@ -42,5 +43,7 @@ const Readbook = ({readbook}) => {
         </div>
     );
 };
-
+Readbook.propTypes = {
+  readbook:PropTypes.object.isRequired
+}
 export default Readbook;
