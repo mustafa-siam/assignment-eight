@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 export const shortcontext=createContext();
 const Listbooks = () => {
     const [sortby,setsortby]=useState(null);
@@ -21,9 +21,13 @@ const Listbooks = () => {
                         </ul>
                     </div>
                 </div>
-            <div className="flex gap-11  ">
-                <Link to={'readbooks'}><h2>Read Books</h2></Link>
-                <Link to={'whislist'}><h2>Wishlist Books</h2></Link>            
+            <div className="flex gap-11 pb-8 border-b-2 border-dashed border-amber-800">
+                <div className={`hover:border-b-2 border-[#23BE0A]`}>
+                <NavLink to={'readbooks'} className={({isActive})=>isActive &&"text-[#23BE0A]"}><h2>Read Books</h2></NavLink>
+                </div>
+                <div className={`hover:border-b-2 border-[#23BE0A]`}>
+                     <NavLink to={'whislist'} className={({isActive})=>isActive &&"text-[#23BE0A]"}>Wishlist Books</NavLink>
+                </div>            
             </div>
             <div className="py-16">
                 <Outlet></Outlet>
