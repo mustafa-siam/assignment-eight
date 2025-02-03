@@ -9,6 +9,8 @@ import Readpages from './header file/Readpages'
 import Bookdetails from './Book file/Bookdetails'
 import Readbooks from './Book file/Readbooks'
 import Whislistbooks from './Book file/Whislistbooks'
+import Blog from './header file/Blog'
+import About from './header file/About'
 
 const router=createBrowserRouter([
   {
@@ -42,6 +44,14 @@ const router=createBrowserRouter([
       path:'/bookdetails/:id',
       element:<Bookdetails></Bookdetails>,
       loader:()=>fetch('/books.json')
+     },
+     {
+      path:'/blog',
+      element:<Blog></Blog>
+     },
+     {
+      path:'/about',
+      element:<About></About>
      }
     ]
   }

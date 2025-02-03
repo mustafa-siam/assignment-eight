@@ -5,6 +5,8 @@ const Navbar = () => {
        <li><NavLink to={'/'}  className={({ isActive }) => (isActive ? "text-[#23BE0A] border-[1px] border-[#23BE0A]" : "")}>Home</NavLink></li>
        <li><NavLink to={'/listbooks'} className={({isActive})=>isActive && "text-[#23BE0A] border-[1px] border-[#23BE0A]"}>Listed Books</NavLink></li>
        <li><NavLink to={'/readpages'} className={({isActive})=>isActive && " text-[#23BE0A] border-[1px] border-[#23BE0A]"}>Pages to Read</NavLink></li>
+       <li><NavLink to={'/blog'} className={({isActive})=>isActive && " text-[#23BE0A] border-[1px] border-[#23BE0A]"}>Blog</NavLink></li>
+       <li><NavLink to={'/about'} className={({isActive})=>isActive && " text-[#23BE0A] border-[1px] border-[#23BE0A]"}>About</NavLink></li>
   </>
      return (
         <div>
